@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	function nicesquare (){
+
+		var giddey = document.createElement('div')
+		document.body.appendChild(giddey)
+
+		var x = Math.round(Math.random()*255);
+		var y = Math.round(Math.random()*255);
+		var z = Math.round(Math.random()*255);
+
+		console.log(x, y, z)
+
+
+		giddey.style.width = "100px";
+		giddey.style.height = "100px";
+		giddey.style.backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
+		giddey.style.borderRadius = "50%";
+		giddey.style.position = "relative";
+		giddey.style.display = "inline-block"
+		// body...
+	
+	}
+	
+	setInterval(nicesquare, 100);
+
+
+
+</script>
+
+
+</body>
+</html>
