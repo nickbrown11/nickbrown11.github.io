@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+	function makeShai() {
+
+		var shai = document.createElement("div");
+		document.body.appendChild(shai);
+
+		shai.style.width = "200px";
+		shai.style.height = "200px";
+		shai.style.backgroundColor = "rgb(0,0,0)";
+		shai.style.backgroundImage = "url(https://ic.recreationid.com/wilson/items/1013900_1.jpg)";
+			shai.addEventListener("click", function(){
+				shai.style.backgroundImage = "url(https://cdn.nba.com/manage/2020/10/Recap201-1420Shai20Gilgeous20Alexander-784x579.jpg)";})
+					shai.style.backgroundSize = "contain";
+		shai.style.borderRadius = "50%";
+		shai.style.backgroundSize = "contain";
+		shai.style.display = "inline-block";
+
+
+
+	}
+
+setInterval(makeShai, 250)
+	</script>
+
+</body>
+</html>
