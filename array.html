@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#box{
+			height: 400px;
+			width: 400px;
+			border: solid;
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: block;
+			background-position: center;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+
+	<p>
+		COLLEGE SCHOOLS BECAUSE YOU KNOW
+	</p>
+	<div id = "box"></div>
+	<p id = "p2"></p>
+
+	<script type="text/javascript">
+
+	var schools = ["Michigan", "Villanova", "Trinity", "Maryland", "Michigan State", "Syracuse", "North Carolina", "Duke", "Boston College", "Kentucky", "Ohio State", "Virginia", ]
+
+	var pics = ["url(michigan.png)", "url(villanova.png)", "url(trinity.png.jpg)", "url(maryland.png.jpg)", "url(michiganstate.png)", "url(syracuse.png)", "url(northcarolina.png)", "url(duke.png)", "url(bostoncollege.png)", "url(kentucky.png)", "url(ohiostate.png)", "url(virginia.png.jpg)", ]
+
+	var click = document.getElementById("box");
+	var click2 = document.getElementById("p2");
+	click.addEventListener("click", function(){
+
+
+	
+
+		var random = Math.floor(Math.random()*10);
+		box.style.backgroundImage = pics[random];
+		click2.innerText = schools[random];
+
+})
+
+	</script>
+
+</body>
+</html>

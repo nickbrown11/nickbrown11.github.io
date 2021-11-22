@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+
+		#website{
+			background-color: gray;
+		}
+
+		#turkey{
+			height: 250px;
+			width: 250px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url('turkey.gif');
+			position: absolute;
+
+
+
+			animation-name: dance;
+			animation-duration:3s;
+			animation-iteration-count: infinite;
+		}
+
+
+			@keyframes dance{
+			from{
+				right: 500px;
+				transform:rotate(0deg);
+
+			}
+
+			to{
+				right: 1000px}
+
+
+
+}
+		#knife{
+			height: 250px;
+			width: 250px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(knife.png);
+			position: absolute;
+
+
+
+			animation-name: move;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+
+
+	
+		@keyframes move{
+			from{
+				right: 0px;
+
+			}
+
+			to{
+				right: 800px;}
+
+			}
+	</style>
+	<title></title>
+</head>
+<body id = 'website'>
+
+<center>
+	<h1>
+		MERRY THANKSGIVING
+	</h1>
+</center>
+
+	<div id = 'turkey'></div>
+	<div id = 'knife'></div>
+
+	<script type="text/javascript">
+		
+
+
+	</script>
+
+
+	
+
+</body>
+</html>
