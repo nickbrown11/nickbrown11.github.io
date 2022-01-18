@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		.burger
+
+		{	
+			height: 100px;
+			width: 100px;
+			background-image: url(https://www.pe.com/wp-content/uploads/2019/08/OCR-L-SMASHBURGER-0815-1.jpg);
+			background-size: cover;
+			position: absolute;
+		}
+	</style>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		document.addEventListener("mousemove",
+
+		function burger(input) {
+		var burger = document.createElement("div")
+		document.body.appendChild(burger);
+		burger.classList.add("burger")
+
+		burger.style.left = input.clientX -50+ "px";
+		burger.style.top = input.clientY -50+ "px";
+		console.log(input);
+
+	})
+
+	</script>
+
+</body>
+</html>
