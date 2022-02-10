@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#album1{
+			width:200px;
+			height:200px;
+			background-color:lightblue;
+			position:relative;
+			background-image: url(https://i.scdn.co/image/ab67616d0000b273e60b56aa1e58fe76240a101b);
+			background-size: cover;
+		}
+
+		#container1{
+			left:400px;
+			top:0px;
+			position:absolute;
+			width:600px;
+			height:200px;
+			border:1px solid black;
+		}
+
+		.tellems{
+			width:10px;
+			height:10px;
+			background-color:lightblue;
+			margin:5px;
+			display:inline-block;
+		}
+
+		#album2{
+			width:100px;
+			height:100px;
+			top: 50px;
+			background-color:lightblue;
+			position:relative;
+			background-image: url(https://i.ytimg.com/vi/O-6Fq0UhDAI/maxresdefault.jpg);
+			background-size: cover;
+		}
+
+		#container2{
+			left:400px;
+			top:0px;
+			position:absolute;
+			width:600px;
+			height:100px;
+			border:1px solid black;
+		}
+
+		.myshts{
+			width:10px;
+			height:10px;
+			background-color:lightgreen;
+			margin:5px;
+			display:inline-block;
+		}
+
+		#album3{
+				width:10px;
+			height:10px;
+			background-color:purple;
+			margin:5px;
+			display:inline-block;
+		}
+
+	</style>
+</head>
+<body>
+	<audio id="tellem" src="tellem.mp3"></audio>
+
+	<div id="album1"></div>
+	<div id="container1"></div>
+	<div id="album2"></div>
+	<div id="container2"></div>
+	<div id="album3"></div>
+	<div id="container3"></div>
+
+	<script type="text/javascript">
+		
+		// when I click on the album1 div make five tiny album1 looking divs or images of the artist whomade the album pop iup in the container div;
+		// and also play the song.
+var container1 = document.getElementById("container1");
+
+		function makeTellemDivs(){
+			var tellems = document.createElement("div");
+			container1.appendChild(tellems);
+			tellems.classList.add('tellems')
+
+		}
+
+		album1.addEventListener("click", function(){
+			tellem.play()
+			for(var i=1; i<100; i=i+1){makeTellemDivs()}
+
+		})
+
+var container2 = document.getElementById("container2");
+
+		function makeMyShtDivs(){
+			var myshts = document.createElement("div");
+			container2.appendChild(myshts);
+			myshts.classList.add('myshts')
+		}
+
+		album2.addEventListener("click", function(){
+			tellem.play()
+			for(var i=1; i<100; i=i+1){makeMyShtDivs()}
+
+		})
+
+var container3 = document.getElementById("container2");
+
+		function makeSkiDivs(){
+			var skis = document.createElement("div");
+			container2.appendChild(skis);
+			skis.classList.add('skis')
+		}
+
+		album3.addEventListener("click", function(){
+			tellem.play()
+			for(var i=1; i<100; i=i+1){makeSkiDivs()}
+
+
+
+	</script>
+
+</body>
+</html>

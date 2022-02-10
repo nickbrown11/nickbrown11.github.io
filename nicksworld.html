@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+			background-color: teal;
+		}
+
+		#album1{
+			width:100px;
+			height:100px;
+			background-color:lightblue;
+			position:relative;
+			background-image: url(https://i1.sndcdn.com/artworks-XuS8WowEPhsl-0-t500x500.jpg);
+			background-size: cover;
+		}
+
+		#container1{
+			left:400px;
+			top:0px;
+			position:absolute;
+			width:600px;
+			height:100px;
+			border:1px solid black;
+		}
+
+		#album2{
+				width:100px;
+			height:100px;
+			top: 50px;
+			background-color:lightblue;
+			position:relative;
+			background-image: url(mysht.jpg);
+			background-size: cover;
+		}
+
+		#container2{
+			left:400px;
+			top:150px;
+			width:600px;
+			height:100px;
+			position: absolute;
+			border:1px solid black;
+		}
+
+			#album3{
+			width:100px;
+			height:100px;
+			top: 100px;
+			background-color:lightblue;
+			position:relative;
+			background-image: url(https://i1.sndcdn.com/artworks-4ezf3LH3fmDU2Llf-364Xqw-t500x500.jpg);
+			background-size: cover;
+		}
+
+		#container3{
+			left:400px;
+			top:300px;
+			width:600px;
+			height:100px;
+			position: absolute;
+			border:1px solid black;
+		}
+
+		#album4{
+				width:100px;
+			height:100px;
+			top: 150px;
+			background-color:lightblue;
+			position:relative;
+			background-image: url(https://i.scdn.co/image/ab67616d0000b27399805a23624cce8462e8febd);
+			background-size: cover;
+		}
+
+		#container4{
+			left:400px;
+			top:450px;
+			width:600px;
+			height:100px;
+			position: absolute;
+			border:1px solid black;
+		}
+
+		#album5{
+			width:100px;
+			height:100px;
+			top: 200px;
+			background-color:lightblue;
+			position:relative;
+			background-image: url(https://i1.sndcdn.com/artworks-000588424826-hdgn4r-t500x500.jpg);
+			background-size: cover;
+		}
+
+		#container5{
+			left:400px;
+			top:600px;
+			width:600px;
+			height:100px;
+			position: absolute;
+			border:1px solid black;
+		}
+
+	</style>
+</head>
+<body>
+	<audio id="tellem"src="tellem.mp3"></audio>
+	<audio id="mysht" src="mysht.mp3"></audio>
+	<audio id="ski" src="ski.mp3"></audio>
+	<audio id="hatchback" src="hatchback.mp3"></audio>
+	<audio id="hot" src="hot.mp3"></audio>
+
+	<div id="album1"></div>
+	<div id="container1"></div>
+	<div id="album2"></div>
+	<div id="container2"></div>
+	<div id="album3"></div>
+	<div id="container3"></div>
+	<div id="album4"></div>
+	<div id="container4"></div>
+	<div id="album5"></div>
+	<div id="container5"></div>
+
+	<script type="text/javascript">
+		
+		// when I click on the album1 div make five tiny album1 looking divs or images of the artist whomade the album pop iup in the container div;
+		// and also play the song.
+var container1 = document.getElementById("container1");
+
+		function makeTellemDivs(){
+			var tellems = document.createElement("div");
+			container1.appendChild(tellems);
+			tellems.classList.add('tellems');
+
+		}
+
+		album1.addEventListener("click", function(){
+			tellem.play()
+			for(var i=1; i<100; i=i+1){makeTellemDivs()}
+
+		})
+
+var container2 = document.getElementById("container2");
+
+		function makeMyShtDivs(){
+			var myshts = document.createElement("div");
+			container2.appendChild(myshts);
+			myshts.classList.add('myshts')
+		}
+
+		album2.addEventListener("click", function(){
+			mysht.play()
+			for(var i=1; i<100; i=i+1){makeMyShtDivs()}
+
+		})
+
+var container3 = document.getElementById("container3");
+
+		function makeSkiDivs(){
+			var skis = document.createElement("div");
+			container3.appendChild(skis);
+			skis.classList.add('skis')
+		}
+
+		album3.addEventListener("click", function(){
+		ski.play()
+		for(var i=1; i<100; i=i+1){makeSkiDivs()}
+
+	})
+
+var container4 = document.getElementById("container3");
+
+		function makeHatchbackDivs(){
+			var hatchbacks = document.createElement("div");
+			container4.appendChild(hatchbacks);
+			hatchbacks.classList.add('hatchbacks')
+		}
+
+		album4.addEventListener("click", function(){
+		hatchback.play()
+		for(var i=1; i<100; i=i+1){makeHatchbackDivs()}
+
+	})
+
+var container5 = document.getElementById("container3");
+
+		function makeHotDivs(){
+			var hots = document.createElement("div");
+			container5.appendChild(hots);
+			hots.classList.add('hots')
+		}
+
+		album5.addEventListener("click", function(){
+		hot.play()
+		for(var i=1; i<100; i=i+1){makeHotDivs()}
+
+	})
+
+	</script>
+
+</body>
+</html>
