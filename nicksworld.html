@@ -103,6 +103,14 @@
 			border:1px solid black;
 		}
 
+		.tellems{
+			width:35px;
+			height:35px;
+			margin:7px;
+			display: inline-block;
+			background-color:white;
+		}
+
 	</style>
 </head>
 <body>
@@ -127,74 +135,75 @@
 		
 		// when I click on the album1 div make five tiny album1 looking divs or images of the artist whomade the album pop iup in the container div;
 		// and also play the song.
-var container1 = document.getElementById("container1");
+var nick1 = document.getElementById("album1");
 
 		function makeTellemDivs(){
 			var tellems = document.createElement("div");
 			container1.appendChild(tellems);
-			tellems.classList.add('tellems');
+			tellems.classList.add("tellems");
 
 		}
 
-		album1.addEventListener("click", function(){
+		nick1.addEventListener("click", function(){
 			tellem.play()
-			for(var i=1; i<100; i=i+1){makeTellemDivs()}
+			for(var i=1; i<13; i=i+1){makeTellemDivs();}
 
 		})
 
-var container2 = document.getElementById("container2");
+var nick2 = document.getElementById("album2");
 
 		function makeMyShtDivs(){
 			var myshts = document.createElement("div");
 			container2.appendChild(myshts);
-			myshts.classList.add('myshts')
+			myshts.classList.add("tellems")
 		}
 
-		album2.addEventListener("click", function(){
+		nick2.addEventListener("click", function(){
 			mysht.play()
-			for(var i=1; i<100; i=i+1){makeMyShtDivs()}
+			for(var i=1; i<11; i=i+1){makeMyShtDivs();}
 
 		})
 
-var container3 = document.getElementById("container3");
+var nick3 = document.getElementById("album3");
 
 		function makeSkiDivs(){
 			var skis = document.createElement("div");
 			container3.appendChild(skis);
-			skis.classList.add('skis')
+			skis.classList.add("tellems")
 		}
 
-		album3.addEventListener("click", function(){
+		nick3.addEventListener("click", function(){
 		ski.play()
-		for(var i=1; i<100; i=i+1){makeSkiDivs()}
+		for(var i=1; i<8; i=i+1){makeSkiDivs();}
 
 	})
 
-var container4 = document.getElementById("container3");
+var nick4 = document.getElementById("album4");
 
 		function makeHatchbackDivs(){
 			var hatchbacks = document.createElement("div");
 			container4.appendChild(hatchbacks);
-			hatchbacks.classList.add('hatchbacks')
+			hatchbacks.classList.add("tellems")
 		}
 
-		album4.addEventListener("click", function(){
+		nick4.addEventListener("click", function(){
 		hatchback.play()
-		for(var i=1; i<100; i=i+1){makeHatchbackDivs()}
+		for(var i=1; i<8; i=i+1){makeHatchbackDivs();}
 
 	})
 
-var container5 = document.getElementById("container3");
+var nick5 = document.getElementById("album5");
+
 
 		function makeHotDivs(){
 			var hots = document.createElement("div");
 			container5.appendChild(hots);
-			hots.classList.add('hots')
+			hots.classList.add("tellems")
 		}
 
-		album5.addEventListener("click", function(){
+		nick5.addEventListener("click", function(){
 		hot.play()
-		for(var i=1; i<100; i=i+1){makeHotDivs()}
+		for(var i=1; i<7; i=i+1){makeHotDivs();}
 
 	})
 
