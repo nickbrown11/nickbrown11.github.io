@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#website{
+			background-color: lightblue;
+		}
+
+		.present{
+			background-repeat:no-repeat;
+			transition:2s;
+			opacity:0.8;
+		}
+
+		#present1{
+			position: absolute;
+			background-image: url(fam.jpg);
+			background-size: contain;
+			width: 750px;
+			height: 375px;
+			left: 100px;
+			top: 100px;
+			
+		}
+
+		#present2{
+			position: absolute;
+			background-image: url(fam2.jpg);
+			background-size: contain;
+			width: 500px;
+			height: 250px;
+			left: 300px;
+			top: 300px;
+			
+
+		}
+
+		#present3{
+			position: absolute;
+			background-image: url(fam3.jpg);
+			background-size: contain;
+			width: 500px;
+			height: 250px;
+			left: 500px;
+			top: 500px;
+			
+
+		}
+
+		#present4{
+			position: absolute;
+			background-image: url(fam4.jpg);
+			background-size: contain;
+			width: 500px;
+			height: 250px;
+			left: 700px;
+			top: 700px;
+			
+
+		}
+
+	</style>
+	<title></title>
+</head>
+<body id = "website">
+
+	<h1>
+		<center>
+			THANKS FOR EVERYTHING LOVE YOU
+		</center>
+	</h1>
+
+	<div class = "present" id = 'present1'></div>
+	<div class = "present" id = 'present2'></div>
+	<div class = "present" id = 'present3'></div>
+	<div class = "present" id = 'present4'></div>
+
+	<script type="text/javascript">
+
+		var present1=document.getElementById('present1');
+		function move (input){
+
+			input.style.left = Math.random()*800 + "px";
+			console.log(input.style.left)
+
+			input.style.top = Math.random()*500 + "px";
+			console.log(input.style.top)
+
+		}
+
+		function runningMoveFunctions (){
+
+		move(present1)
+
+		var present2=document.getElementById('present2');
+
+		move(present2)
+
+		var present3=document.getElementById('present3');
+
+		move(present3)
+
+		var present4=document.getElementById('present4');
+
+		move(present4)
+
+		}
+
+		setInterval(runningMoveFunctions, 2000)
+
+	</script>
+
+</body>
+</html>
