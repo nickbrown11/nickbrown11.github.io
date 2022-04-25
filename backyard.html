@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		body{
+			background-color: black;
+		}
+
+		#box{
+			color: white;
+			height: 600px;
+			width: 1400px;
+			border: solid;
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: block;
+			background-position: center;
+	</style>
+</head>
+<body>
+
+	<center>
+		<h1>
+		<p>
+			My Backyard
+		</p>
+		</h1>
+	</center>
+	<div id = "box"></div>
+	<p id = "p2"></p>
+
+	<script type="text/javascript">
+
+		var yard = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine",]
+
+		var pics = ["url(one.jpeg)", "url(two.jpeg)", "url(three.jpeg)", "url(four.jpeg)", "url(five.jpeg)", "url(six.jpeg)", "url(seven.jpeg)", "url(eight.jpeg)", "url(nine.jpeg)",]
+
+		var click = document.getElementById("box");
+	var click2 = document.getElementById("p2");
+	click.addEventListener("click", function(){
+
+
+	
+
+		var random = Math.floor(Math.random()*10);
+		box.style.backgroundImage = pics[random];
+		click2.innerText = yard[random];
+
+})
+		
+	</script>
+
+</body>
+</html>
